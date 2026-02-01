@@ -7,7 +7,7 @@ convertButton.addEventListener("click", () => {
     if(binary === "" || !/^[01]+$/.test(binary)) {
         result.classList.remove("text-emerald-500");
         result.classList.add("text-red-500");
-        result.textContent = "Tente novamente. Insira um número binário válido.";
+        result.textContent = "Try again! Please enter a valid binary number.";
         setTimeout(() => {
             result.textContent = "";
             result.classList.remove("text-red-500");
